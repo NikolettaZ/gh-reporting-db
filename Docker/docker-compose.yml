@@ -6,7 +6,7 @@ services:
     restart: unless-stopped
     environment:
       - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=password
+      - POSTGRES_PASSWORD=postgres
       - POSTGRES_DB=postgres
     ports:
       - "5432:5432"
@@ -23,7 +23,7 @@ services:
     restart: unless-stopped
     environment:
       - "PGADMIN_DEFAULT_EMAIL=veronikaz@tut.by"
-      - "PGADMIN_DEFAULT_PASSWORD=password"
+      - "PGADMIN_DEFAULT_PASSWORD=postgres"
     ports:
       - "8080:80"
     networks:
